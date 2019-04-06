@@ -1413,8 +1413,8 @@ var AuthService = /** @class */ (function () {
     function AuthService(http, jwtService) {
         this.http = http;
         this.jwtService = jwtService;
-        this.endpoint = 'https://comp308-w2019-assignment02-as.herokuapp.com/home';
-        //private endpoint = 'http://localhost:3000/api/';
+        //private endpoint = 'https://comp308-w2019-assignment02-as.herokuapp.com/api/';
+        this.endpoint = 'http://localhost:3000/api/';
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 'Content-Type': 'application/json',
@@ -1481,8 +1481,8 @@ var ContactListService = /** @class */ (function () {
     function ContactListService(http) {
         this.http = http;
         this.authToken = null;
-        this.endpoint = 'https://comp308-w2019-assignment02-as.herokuapp.com/contact/contact-list/';
-        //private endpoint = 'http://localhost:3000/api/contact-list/';
+        //private endpoint = 'https://comp308-w2019-assignment02-as.herokuapp.com/api/contact-list/';
+        this.endpoint = 'http://localhost:3000/api/contact-list/';
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 'Content-Type': 'application/json',
